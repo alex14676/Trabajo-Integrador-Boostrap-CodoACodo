@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <title>Trabajo Integrador: Bootstrap</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg gray">
+    <div class="container-xl">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/codoacodo.png" alt="" width="100" height="60" class="d-inline-block align-text-center ">
+        <span class="text-white">Conf Bs As</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">La conferencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link gris" href="#">Los oradores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link gris" href="#">El lugar y la fecha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link gris" href="#">Conviertete en orador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link green1" href="#">Comprar tickets</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid m-0 p-0 position-relative">
+    <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/ba1.jpg" class="d-block w-100 img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/ba2.jpg" class="d-block w-100 img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/ba3.jpg" class="d-block w-100 img" alt="...">
+        </div>
+      </div>
+    </div>
+    <div class="position-absolute container-absolute">
+      <h1 class="position-absolute fw-semibold">Conf Bs As</h1>
+      <div class="position-absolute texto">
+        <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra
+          comunidad el conocimiento y experiencia de los expertos que están
+          creando el futuro de Internet. Ven a conocer a miembros del evento, a
+          otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+      </div>
+      <div class="position-absolute  buttons d-flex justify-content-end gap-2">
+        <button type="button" class="btn btn-outline-light ">Quiero ser orador</button>
+        <button type="button" class="btn btn-success green3">Comprar tickets</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="container-fluid p-0 ">
+    <p class="text-center pt-3 m-0 ">CONOCE A LOS</p>
+    <h2 class="text-center p-1 fw-semibold">ORADORES</h2>
+    <div class="cards d-flex flex-wrap justify-content-center align-items-center gap-5 mb-5">
+      <div class="card border">
+        <img src="./assets/steve.jpg" alt="" class="mb-3 rounded-top">
+        <div class="d-flex gap-2 ms-3">
+          <button type="button"
+            class="badge bg-warning text-dark d-flex align-items-center fw-bold border-0">Javascript</button>
+          <button type="button"
+            class="badge bg-info text-white  d-flex align-items-center fw-bold border-0">React</button>
+        </div>
+        <h3 class="ms-3">Steve Jobs</h3>
+        <p class="p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum deserunt nulla error atque vel
+          voluptatem
+          cum officia ducimus? Officia, architecto.</p>
+      </div>
+      <div class="card">
+        <img src="./assets/bill.jpg" alt="" class="mb-3 rounded-top">
+        <div class="d-flex gap-2 ms-3">
+          <button type="button"
+            class="badge bg-warning text-dark d-flex align-items-center fw-bold border-0">Javascript</button>
+          <button type="button"
+            class="badge bg-info text-white  d-flex align-items-center fw-bold border-0">React</button>
+        </div>
+        <h3 class="ms-3">Bill Gates</h3>
+        <p class="p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum deserunt nulla error atque vel
+          voluptatem
+          cum
+          officia ducimus? Officia, architecto.</p>
+      </div>
+      <div class="card">
+        <img src="./assets/ada.jpeg" alt="" class="mb-3 rounded-top">
+        <div class="d-flex gap-2 ms-3">
+          <button type="button" class="badge bg-secondary d-flex align-items-center fw-bold border-0">Negocios</button>
+          <button type="button" class="badge bg-danger d-flex align-items-center fw-bold border-0">Startups</button>
+        </div>
+        <h3 class="ms-3">Ada Lovalace</h3>
+        <p class="p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum deserunt nulla error atque vel
+          voluptatem
+          cum
+          officia ducimus? Officia, architecto.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid p-0 d-flex border info">
+    <div class=" border info1">
+      <img src="./assets/honolulu.jpg" alt="" class="w-100  h-100 honolulu">
+    </div>
+    <div class=" gray border info2">
+      <h2 class="text-white fw-semibold m-3">Bs As - Octubre</h2>
+      <p class="text-white m-3">Bs As - Octubre
+
+        Buenos aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulú es
+        la más
+        sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulú se refiere al área urbana
+        en la
+        costa sureste de la isla de Oahu, la ciudad y el condado de Honolulú han formado una ciudad-condado consolidada
+        que
+        cubre toda la ciudad (aproximadamente 600 km² de superficie).</p>
+      <button type="button" class="btn btn-outline-light m-3">Conocé más</button>
+    </div>
+  </section>
+
+  <section class="container-fluid ">
+    <p class="text-center mt-3 mb-0">CONVIERTETE EN UN</p>
+    <h2 class="text-center m-0 p-1 fw-semibold">ORADOR</h2>
+    <p class="text-center mb-3">Anotate como orador para dar una charla ignite. Cuentanos de que quiere hablar?</p>
+    <div class="w-50  mx-auto">
+      <div class="row ">
+        <div class="col p-2">
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+        </div>
+        <div class="col p-2">
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+        </div>
+        <div class="row p-2 mx-auto">
+          <textarea class="form-control" placeholder="Sobre que quieres hablar?" id="floatingTextarea"></textarea>
+          <label for="floatingTextarea" class="p-0 fw-light">Recuerda incluir un titulo para tu charla</label>
+        </div>
+        <div class="row p-2 mx-auto">
+          <button type="submit" class="btn btn-success green2 border-0 fw-bold">Enviar</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="container-fluid bgblue mt-3">
+    <div class="w-100  mx-auto d-flex flex-wrap justify-content-center align-items-center">
+      <div class="d-flex flex-column p-4">
+        <a href="" class="text-decoration-none  text-white">Preguntas </a>
+        <a href="" class="text-decoration-none text-white"> frecuentes</a>
+      </div>
+      <a href="" class="text-decoration-none p-4 text-white">Contáctanos</a>
+      <a href="" class="text-decoration-none p-4 text-white">Prensa</a>
+      <a href="" class="text-decoration-none p-4 text-white">Conferencias</a>
+      <div class="d-flex flex-column p-4">
+        <a href="" class="text-decoration-none  text-white">Términos y</a>
+        <a href="" class="text-decoration-none text-white"> condiciones</a>
+      </div>
+      <a href="" class="text-decoration-none p-4 text-white">Privacidad</a>
+      <a href="" class="text-decoration-none p-4 text-white">Estudiantes</a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
